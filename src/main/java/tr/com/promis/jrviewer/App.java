@@ -456,7 +456,7 @@ public class App {
 		}
 		
 		PrintService printService = Arrays.asList(printServices).stream()
-			.filter(p -> p.getName().contains(txtPrinterName.getText()))
+			.filter(p -> p.getName().contains(printerName))
 			.findFirst()
 			.orElse(printServices[0]);
 		
