@@ -446,6 +446,9 @@ public class App {
 		JasperExportManager.exportReportToPdfFile(jp, exportPath);
 	}
 	
+	/*
+	 * https://gist.github.com/quchie/453ad4c78c63913d32a1953ce46877d1
+	 */
 	private void printReport() throws JRException {
 		PrintService[] printServices = PrintServiceLookup.lookupPrintServices(null, null);
 		if (printServices == null || printServices.length == 0) {
